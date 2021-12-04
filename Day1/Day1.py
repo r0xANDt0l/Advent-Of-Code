@@ -15,7 +15,7 @@ def ex2(input : list[str]) -> int:
     result = 0
     lastNumb = int(input[0]) + int(input[1]) + int(input[2])
 
-    for i in input:
+    for i in range(len(input) -2):
         groupCurr = int(input[i]) + int(input[i+1]) + int(input[i+2])
         if groupCurr > lastNumb:
             result +=1
