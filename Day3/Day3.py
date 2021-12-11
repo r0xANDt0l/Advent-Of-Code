@@ -1,13 +1,23 @@
 def ex1(input : list[str]) -> int:
     nCul = len(input[0]) -1
     bitarray = [0 for i in range(nCul)]
-    for i in range(len(lines)):
-        for a in len[bitarray]:
-            if str(lines[a]) == "0":
-                bitarray[a] -= 1
+    for i in input:
+        for j in range(nCul):
+            if i[j] == "0":
+                bitarray[j] -= 1
             else:
-                bitarray[a] += 1
-
+                bitarray[j] += 1
+				
+    g = ""
+    e = ""
+    for i in bitarray:
+        if i > 0:
+            g+="1"
+            e+="0"
+        else:
+            g+="0"
+            e+="1"
+    return int(g,2) * int(e,2)
 
 def ex2(input : list[str]) -> int:
     pass
