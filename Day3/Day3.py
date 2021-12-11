@@ -2,6 +2,7 @@ def ex1(input : list[str]) -> int:
     for i in range(len(lines)):
         binIN = lines[i]
         binOUT = int(binIN, 2)
+        return binOUT[i]
 
 def ex2(input : list[str]) -> int:
     pass
