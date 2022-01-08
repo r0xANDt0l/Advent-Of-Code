@@ -26,7 +26,7 @@ def ex2(input: list[str]) -> int:
         if counter < min:
             min = counter
     
-    return min
+    return int(min)
 
 file = open("Day7/data.txt")
 
